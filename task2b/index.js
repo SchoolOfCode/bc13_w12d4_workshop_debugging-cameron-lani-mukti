@@ -5,29 +5,29 @@ function add(numb1, numb2) {
 }
 
 function multiply(num1, operator, num2) {
-  //not working because the operator is a string!
-  return num1, operator, num2;
+  if (operator == "*") {
+    return num1 * num2;
+  } else return "* not received";
 }
 
 function hasPets(hasPet, firstName, lastName) {
-  if (hasPet === "true") {
+  if (hasPet === true) {
     return firstName + " " + lastName + " really does have a nice pet";
   } else {
-    return;
-    firstName + " " + lastName + " " + "has no pets";
+    return firstName + " " + lastName + " " + "has no pets";
   }
 }
 
 let myAccountNumbers = {
-  account1: "220",
+  account1: 220,
   account2: 144,
   account3: 12,
   account4: 1443,
 };
 
 function addsBalanceOfAccounts() {
-  let firstAccount = myAccountNumbers[1];
-  let secondAccount = myAccountNumbers["account3"];
+  let firstAccount = myAccountNumbers.account2;
+  let secondAccount = myAccountNumbers.account3;
   return firstAccount + secondAccount;
 }
 
