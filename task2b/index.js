@@ -1,10 +1,12 @@
+debugger;
 function add(numb1, numb2) {
-  let num1 = String(numb1);
-  return num1 + numb2;
+  // let num1 = numb1;
+  return numb1 + numb2;
 }
 
 function multiply(num1, operator, num2) {
-  num1, operator, num2;
+  //not working because the operator is a string!
+  return num1, operator, num2;
 }
 
 function hasPets(hasPet, firstName, lastName) {
